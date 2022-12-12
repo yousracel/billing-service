@@ -17,7 +17,5 @@ public class Bill {
     private Date billingDate;
     @OneToMany(mappedBy="bill")
     private Collection<ProductItem> productItems;
-    private Long customerID;
-    @Transient
-    private Customer customer;
+    private long customerID;
 }
